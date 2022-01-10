@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: grid;
+        grid-template-columns: 80px 330px 1fr 250px;
+        grid-template-rows: 80px 1fr;
+        height: 100vh;
+        font-family: sans-serif;
+        color: #343a40;
+        font-size: 24px;
+        text-align: center;
+        font-weight: bold;
+      }
+      nav,
+      section,
+      main,
+      aside {
+        padding-top: 21px;
+      }
+
+      nav {
+        background-color: #343a40;
+        grid-row: 1/-1;
+        color: white;
+      }
+
+      aside {
+        background-color: #e9ecef;
+      }
+
+      section {
+        background-color: #e9ecef;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px;
+        overflow: scroll;
+        cursor: pointer;
+      }
+      .email {
+        padding: 10px 20px;
+        background-color: #adb5bd;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        cursor: pointer;
+      }
+
+      menu {
+        display: flex;
+        gap: 10px;
+        justify-content: start;
+        list-style-type: none;
+        background-color: #7048e8;
+        color: white;
+        grid-column: 2/ -1;
+        align-items: center;
+        padding: 0 40px;
+        /* justify-content:  */
+      }
+      button {
+        border: none;
+        font-size: 16px;
+        background-color: #5f3dc4;
+        cursor: pointer;
+        color: #fff;
+        padding: 12px 24px;
+        display: inline-block;
+        font-weight: bold;
+      }
+      button:last-child {
+        background-color: #f03e3e;
+        margin-left: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>NAV</nav>
+
+    <menu>
+      <button class="menu-item new">New</button>
+      <button class="menu-item reply">Reply</button>
+      <button class="menu-item forward">Forward</button>
+      <button class="menu-item mark unread">Mark unread</button>
+      <button class="menu-item trash">Trash</button>
+    </menu>
+    <section class="inbox">
+      <div class="email email--1">Email 1</div>
+      <div class="email email--2">Email 2</div>
+      <div class="email email--3">Email 3</div>
+      <div class="email email--4">Email 4</div>
+      <div class="email email--5">Email 5</div>
+      <div class="email email--6">Email 6</div>
+      <div class="email email--7">Email 7</div>
+      <div class="email email--8">Email 8</div>
+      <div class="email email--9">Email 9</div>
+      <div class="email email--10">Email 10</div>
+      <div class="email email--11">Email 11</div>
+      <div class="email email--12">Email 12</div>
+      <div class="email email--13">Email 13</div>
+    </section>
+    <main>Email view</main>
+    <aside>Additional Info</aside>
+  </body>
+</html>
